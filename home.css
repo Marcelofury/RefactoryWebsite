@@ -1,21 +1,81 @@
+.hero-section{
+  background-image: url('images\refactory1.jpg');
+  background-position: center;
+    background-size: cover;
+    height: 50vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 .container{
     list-style: none;
     justify-content: space-between;
     display: flex;
     align-items: center;
-    background-image: url('https://refactory.academy/wp-content/uploads/2025/08/0G2A8223-2048x1365.jpg');
-    
 }
+
 .links{
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-
 .links1{
-    display: block;
-    gap: 20px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
     align-items: center;
+    justify-content: center;
+    background: transparent;
+    flex: 1;
+    text-align: center;
+}
+
+.links1 h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(15, 12, 12);
+    margin: 0;
+}
+
+.links1 h4{
+    font-size: 24px;
+    color: rgb(12, 10, 10);
+    margin: 0;
+    font-weight: normal;
+}
+
+.links1 button{
+    display: flex;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.links1 button:nth-child(4){
+    background-color: #8B1874;
+    color: white;
+}
+
+.links1 button:nth-child(5){
+    background-color: #C6D92E;
+    color: #333;
+}
+
+.links1 button:nth-child(6){
+    background-color: white;
+    color: #333;
+}
+
+.links1 button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
