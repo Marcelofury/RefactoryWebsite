@@ -1,81 +1,31 @@
 .hero-section{
-  background-image: url('images\refactory1.jpg');
-  background-position: center;
-    background-size: cover;
-    height: 50vh;
-    padding: 20px 0;
+  
+    background-image:  url('C:/Users/USER/Desktop/refactory/images/refactory1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+    height: 50vh; 
+    color: rgb(24, 22, 22);
+    padding: 10px;
     display: flex;
     flex-direction: column;
-}
+    justify-content: space-between; 
+   }
 
-
-
-.container{
-    list-style: none;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-}
-
-.links{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.links1{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 40px 20px;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    flex: 1;
-    text-align: center;
-}
-
-.links1 h2{
-    font-size: 48px;
-    font-weight: bold;
-    color: rgb(15, 12, 12);
+.main-nav {
+    width: 100%;
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 20px;}
+* {
     margin: 0;
-}
+    padding: 0;
+    box-sizing: border-box;}
+    
+    body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;}
 
-.links1 h4{
-    font-size: 24px;
-    color: rgb(12, 10, 10);
-    margin: 0;
-    font-weight: normal;
-}
 
-.links1 button{
-    display: flex;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-.links1 button:nth-child(4){
-    background-color: #8B1874;
-    color: white;
-}
-
-.links1 button:nth-child(5){
-    background-color: #C6D92E;
-    color: #333;
-}
-
-.links1 button:nth-child(6){
-    background-color: white;
-    color: #333;
-}
-
-.links1 button:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
