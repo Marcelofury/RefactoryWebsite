@@ -1,6 +1,4 @@
 .hero-section{
-  
-    background-image:  url('C:/Users/USER/Desktop/refactory/images/refactory1.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -10,8 +8,42 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
+    
+    /* Sliding background animation */
+    animation: slideBackground 20s infinite;
    }
+
+/* Keyframes for sliding background images */
+@keyframes slideBackground {
+    0% {
+        background-image: url('images/refactory1.jpg');
+    }
+    20% {
+        background-image: url('images/refactory1.jpg');
+    }
+    25% {
+        background-image: url('images/refactory2.jpg');
+    }
+    45% {
+        background-image: url('images/refactory2.jpg');
+    }
+    50% {
+        background-image: url('images/refactory3.jpeg');
+    }
+    70% {
+        background-image: url('images/refactory3.jpeg');
+    }
+    75% {
+        background-image: url('images/refactory4.jpg');
+    }
+    95% {
+        background-image: url('images/refactory4.jpg');
+    }
+    100% {
+        background-image: url('images/refactory1.jpg');
+    }
+}
 
 .main-nav {
     width: 100%;
@@ -36,5 +68,210 @@
  .nav-link:hover {
     color: #007BFF; /* Example hover color */
 }
+.hero-content {
+    text-align: center;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero-content h2,
+.hero-content h4 {
+    color: white;
+}
+
+.hero-content button {
+    padding: 12px 24px;
+    margin: 10px 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-purple {
+    background-color: #8B5CF6;
+    color: white;
+}
+
+.btn-purple:hover {
+    background-color: #7C3AED;
+    transform: translateY(-2px);
+}
+
+.btn-yellow {
+    background-color: #FCD34D;
+    color: #1F2937;
+}
+
+.btn-yellow:hover {
+    background-color: #FBBF24;
+    transform: translateY(-2px);
+}
+
+.btn-white {
+    background-color: white;
+    color: #1F2937;
+}
+
+.btn-white:hover {
+    background-color: #F3F4F6;
+    transform: translateY(-2px);
+}
+
+/* First section layout */
+.first-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-content .purple-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8B5CF6;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-content h4 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #60A5FA;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #4B5563;
+}
+
+.text-content button {
+    padding: 12px 30px;
+    background-color: #fae311;
+    color: #1F2937;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.text-content button:hover {
+    background-color: #294ab6;
+    transform: translateY(-2px);
+}
+
+.image-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Second section - Courses */
+.second-section {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.second-section .section-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #60A5FA;
+    margin-bottom: 10px;
+}
+
+.second-section .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8B5CF6;
+    margin-bottom: 10px;
+}
+
+.second-section .section-description {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8B5CF6;
+    margin-bottom: 40px;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.course-card {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.course-card h4 {
+    font-size: 22px;
+    color: #1F2937;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    font-size: 15px;
+    color: #6B7280;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.course-card button {
+    padding: 12px 30px;
+    background-color: #FEF08A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.course-card button:hover {
+    background-color: #FDE047;
+    transform: translateY(-2px);
+}
+
 
 
